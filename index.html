@@ -10,7 +10,7 @@
         model-viewer { width: 100vw; height: 100vh; display: block; }
         #ar-button {
             position: absolute;
-            bottom: 24px;
+            top: 24px; /* changed from bottom */
             left: 50%;
             transform: translateX(-50%);
             padding: 14px 28px;
@@ -26,10 +26,11 @@
 </head>
 <body>
     <model-viewer id="viewer"
-        src="hamburger 3d model.glb"
+        src="3DModel.glb"
         alt="3D model"
         ar
         ar-modes="webxr scene-viewer quick-look"
+        ar-placement="floor"
         camera-controls
         ios-src="3DModel.usdz"
         environment-image="neutral">
